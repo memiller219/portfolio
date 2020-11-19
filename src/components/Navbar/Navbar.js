@@ -31,7 +31,7 @@ const Navbar = () => {
             <NavItem>
             </NavItem>
             <NavItem>
-              <NavLinks href="/projects">
+              <NavLinks target="_blank">
                   Projects
               </NavLinks>
             </NavItem>

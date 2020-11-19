@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router} from "react-router-dom";
 import GlobalStyle from "./globalStyles";
 import { Intro, Footer, Projects } from "./components";
 
@@ -8,9 +8,7 @@ const App = () => {
     <>
       <Router>
         <GlobalStyle />
-        <Switch>
-          <Route path="/" exact component={Intro} />
-        </Switch>
+        <Intro />
         <Projects />
         <Footer />
       </Router>
