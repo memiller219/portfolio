@@ -4,22 +4,23 @@ import {
   FooterInfo,
   FooterIcons,
   IconsContainer,
-  FooterCopyright
+  FooterCopyright,
 } from "./Footer.elements";
 import { DiGithubBadge } from "react-icons/di";
 import { ImLinkedin } from "react-icons/im";
 import { FaFilePdf } from "react-icons/fa";
-import {RiCopyrightLine} from 'react-icons/ri'
+import { RiCopyrightLine } from "react-icons/ri";
 
-import Resume from '../../images/Resume.pdf';
-
+import Resume from "../../images/Resume.pdf";
 
 const Footer = () => {
   return (
     <FooterContainer>
       <FooterInfo>
         Thank you for visiting my page!
-        <div>Click the links below to view other stuff homie!</div>
+        <div>
+          Click the links below if you wish to see my GitHub, LinkedIn, & Resume
+        </div>
       </FooterInfo>
       <IconsContainer>
         <FooterIcons href="https://github.com/memiller219">
@@ -32,7 +33,9 @@ const Footer = () => {
           <FaFilePdf />
         </FooterIcons>
       </IconsContainer>
-      <FooterCopyright>Website made by me: Michael Miller {<RiCopyrightLine />} 2020</FooterCopyright>
+      <FooterCopyright>
+        Website made by me: Michael Miller {<RiCopyrightLine />} 2020
+      </FooterCopyright>
     </FooterContainer>
   );
 };
